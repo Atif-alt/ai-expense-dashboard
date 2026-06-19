@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Expense Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💰 AI Expense Management Dashboard</h1>
+
+        <div class="form-box">
+            <h2>Submit Expense</h2>
+
+            <input type="text" id="category" placeholder="Category">
+
+            <input type="number" id="amount" placeholder="Amount (USD)">
+
+            <textarea id="description" placeholder="Expense Description"></textarea>
+
+            <button onclick="submitExpense()">Submit Expense</button>
+        </div>
+
+        <div class="result-box">
+            <h2>Agent Decision</h2>
+            <p id="result">No expense submitted yet.</p>
+        </div>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Total</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Approved</h3>
+                <p id="approved">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Review</h3>
+                <p id="pending">0</p>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
